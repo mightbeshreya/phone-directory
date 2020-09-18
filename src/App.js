@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header';
+import './App.css'
 //This Header refers to const Header in function, then ./Header means ./Header.js
 
 /*class App extends Component{
@@ -36,14 +37,55 @@ import Header from './Header';
 }*/
 
 class App extends Component{
+
     render() {
+        let subscribers = [
+            {
+                id: 1,
+                name: "Shilpa Bhat",
+                phone: "1234567890"
+            },
+            {
+                id: 2,
+                name: "ShRISHTI Bhat",
+                phone: "167890"
+            },
+            {
+                id:3,
+                name: "Sameer Bhat",
+                phone: "1237890"
+            }
+        ]
         return (
             <div>
                 <Header/>
-                <button> Add </button>
-                <div>
-                    <span> Name </span><br/>
-                    <span> Phone </span>
+                <div className="component-body-container">
+                    <button className="custom-btn add-btn">Add</button>
+
+                    <div className="grid-container heading-container">
+                        <span className="grid-item name-heading">Name</span>
+                        <span className="grid-item phone-heading">Phone</span>
+                    </div>
+
+                    {
+                        subscribers.map(sub =>{
+                            return <div key={sub.id} className="grid-container">
+                                <span className="grid-item">{sub.name}</span>
+                                <span className="grid-item">{sub.phone}</span>
+                            </div>
+                            }
+                        )
+                    }
+
+                    {/*<div className="grid-container ">
+                        <span className="grid-item ">Shilpa</span>
+                        <span className="grid-item ">1233</span>
+                    </div>
+
+                    <div className="grid-container ">
+                        <span className="grid-item ">Shrishti</span>
+                        <span className="grid-item ">3445</span>
+                    </div> */}
                 </div>
             </div>
         );

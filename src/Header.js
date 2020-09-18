@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
-//import React from 'react';
+//import React, {Component} from 'react';
+import React from 'react';
 import './Header.css';
 
 
-/*const Header = function(props) {
+const Header = function(props) {
     return(
         <div className='header'>
             {props.heading}
         </div>
     )
-}*/
+}
 
 /*const Header = function() {
     return(
@@ -39,7 +39,7 @@ import './Header.css';
 } */
 
 
-class Header extends Component {
+/*class Header extends Component {
     render() {
         return (
             <div className="header">
@@ -47,6 +47,6 @@ class Header extends Component {
             </div>
         );
     }
-}
+}*/
 
 export default Header;

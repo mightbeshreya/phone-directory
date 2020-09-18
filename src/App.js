@@ -8,7 +8,13 @@ import './App.css'
         //let x = 5;
         //let y = 9;
         return (
-            <div>
+            React.createElement("div", {className: "container"},
+                React.createElement("p", {style: {color: "#aaa"} }, "Welcome User!"),
+                React.createElement("hr"), // Line 3
+                React.createElement("div"),
+                React.createElement("input", {type: "text"}, "Please type your name here"), // Line 4
+            )
+            /*<div>
                 {/*<div className="header">
                    Phone Directory
                </div>*///}
@@ -30,15 +36,16 @@ import './App.css'
             )*/
           /*  <h1>Welcome To React</h1>
             <div>Hi</div> */
-        //);
+       /* );
         //return React.createElement("h1", null, "Welcome to React");
         //return React.createElement("div", null, "Hi");
-    /*}
-}*/
+    }
+} */
 
 class App extends Component{
 
     render() {
+
         let subscribers = [
             {
                 id: 1,
@@ -58,7 +65,7 @@ class App extends Component{
         ]
         return (
             <div>
-                <Header/>
+                <Header />
                 <div className="component-body-container">
                     <button className="custom-btn add-btn">Add</button>
 
@@ -72,6 +79,7 @@ class App extends Component{
                             return <div key={sub.id} className="grid-container">
                                 <span className="grid-item">{sub.name}</span>
                                 <span className="grid-item">{sub.phone}</span>
+                                <span className="custom-btn delete-btn">Delete</span>
                             </div>
                             }
                         )
@@ -85,10 +93,12 @@ class App extends Component{
                     <div className="grid-container ">
                         <span className="grid-item ">Shrishti</span>
                         <span className="grid-item ">3445</span>
-                    </div> */}
-                </div>
+                    </div> */ }
+
+               </div>
             </div>
         );
+
     }
 }
 

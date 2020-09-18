@@ -10,6 +10,14 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+/*ReactDOM.render(
+    <div>
+        <h3 class="heading">You should know how to "PROGRAM" a computer.</h3>
+        <p>It teaches you how to "THINK".</p>
+        <customFooter/>
+    </div>,
+    document.getElementById('root')
+)*/
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

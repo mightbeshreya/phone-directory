@@ -84,7 +84,8 @@ class App extends Component{
                                 <span className="grid-item">{sub.name}</span>
                                 <span className="grid-item">{sub.phone}</span>
                                 <span className="custom-btn delete-btn"
-                                      onClick={this.deleteHandler.bind(this, "Delete clicked!!!")}>Delete</span>
+                                      onClick={this.deleteHandler.bind(this, "Delete clicked!!!")}>
+                                    Delete</span>
                             </div>
                             }
                         )
